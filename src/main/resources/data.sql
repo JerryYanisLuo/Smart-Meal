@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS ingredient (
 INSERT INTO ingredient (name,type) VALUES ('猪五花','M');
 INSERT INTO ingredient (name,type) VALUES ('猪肝','M');
 INSERT INTO ingredient (name,type) VALUES ('培根','M');
+INSERT INTO ingredient (name,type) VALUES ('猪皮','M');
 
 -- vegetable
 INSERT INTO ingredient (name,type) VALUES ('生菜','V');
