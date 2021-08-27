@@ -18,3 +18,4 @@ INSERT INTO ingredient (name,type) VALUES ('油菜','V');
 INSERT INTO ingredient (name,type) VALUES ('娃娃菜','V');
 INSERT INTO ingredient (name,type) VALUES ('青菜','V');
 INSERT INTO ingredient (name,type) VALUES ('空心菜','V');
+INSERT INTO ingredient (name,type) VALUES ('菠菜','V');
