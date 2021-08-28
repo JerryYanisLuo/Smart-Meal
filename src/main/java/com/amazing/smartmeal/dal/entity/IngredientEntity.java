@@ -11,6 +11,8 @@ public class IngredientEntity implements Serializable {
     int id;
     String name;
     String type;
+    String category;
+    boolean limited;
 
     public int getId() {
         return id;
@@ -34,5 +36,21 @@ public class IngredientEntity implements Serializable {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public boolean isLimited() {
+        return limited;
+    }
+
+    public void setLimited(boolean limited) {
+        this.limited = limited;
     }
 }

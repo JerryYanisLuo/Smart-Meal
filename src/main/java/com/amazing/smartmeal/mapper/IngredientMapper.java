@@ -16,10 +16,10 @@ public interface IngredientMapper {
     @Select("select * from ingredient")
     List<IngredientEntity> getAllIngredients();
 
-    @Select("select * from ingredient where type='M'")
-    List<IngredientEntity> getAllMeat();
+    @Select("select * from ingredient where type=#{type}")
+    List<IngredientEntity> getIngredientsByType(@Param(value = "type") String type);
 
-    @Select("select * from ingredient where type='V'")
-    List<IngredientEntity> getAllVegetable();
+    @Select("select * from ingredient where type='type' and category=#{category}")
+    List<IngredientEntity> getIngredientsByTypeAndCategory(@Param(value = "type") String type, @Param(value = "category") String category);
 
 }
