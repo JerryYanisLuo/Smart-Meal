@@ -19,7 +19,9 @@ public enum Type {
     FRUIT("FT"),
     SEASON("S"),
     DRINK("DK"),
-    SNACK("SK");
+    SNACK("SK"),
+
+    UNKNOWN("UN");
 
     private String code;
 
