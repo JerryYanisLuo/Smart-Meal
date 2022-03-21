@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Generator {
 
-    @Autowired
-    private IngredientServiceImpl ingredientService;
+  @Autowired
+  private IngredientServiceImpl ingredientService;
 
-    @GetMapping("/")
-    public Meal generateMeal() {
-        Meal meal = new Meal();
-        meal.setMeat(ingredientService.getMeat());
-        meal.setVegetable(ingredientService.getVegetable());
-        return meal;
-    }
+  @GetMapping("/")
+  public Meal generateMeal() {
+    Meal meal = new Meal();
+    meal.setMeat(ingredientService.getMeat());
+    meal.setVegetable(ingredientService.getVegetable());
+    return meal;
+  }
 }
